@@ -12,6 +12,7 @@ export default async function ProtectedLayout({
 
   return (
     <>
+      {session?.user?.name}
       {children}
     </>
   );
