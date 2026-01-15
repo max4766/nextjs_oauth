@@ -9,7 +9,6 @@ export default async function ProtectedLayout({
 }>) {
   const session = await getServerSession(authOptions)
   if (!session) redirect("/login")
-  console.log(session);
 
   return (
     <>
